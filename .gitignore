@@ -106,3 +106,5 @@ dist
 # vscode files
 .vscode
 
+.templates
+template.config.js
