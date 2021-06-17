@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-card {
+  height: 70%;
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 20px;
+  transition: width 1s, height 1s;
+}
+
+.main-card:hover {
+    width: 71%;
+    height: 71%;
+}
+
+.heading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: #00ead3;
+}
+.heading-text {
+  text-align: center;
+  line-height: 5rem;
+}
+
+#grad {
+  background-color: #00ead3;
+}
+

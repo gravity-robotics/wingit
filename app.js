@@ -11,7 +11,7 @@ app.use(express.static("public"))
 var uri = "mongodb+srv://carpit680:Carpit@680@menus.b3pua.mongodb.net/menuDB?retryWrites=true&w=majority"
 var local_uri = "mongodb://127.0.0.1:27017/menuDB"
 
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true})
+mongoose.connect(local_uri, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true})
 
 const db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error:'))
@@ -47,8 +47,12 @@ app.get("/create",function(req,res){
     res.sendFile(__dirname+"/create.html")
 });
 
+app.get("/restaurant",function(req,res){
+    res.sendFile(__dirname+"/menu.html")
+});
+
 app.get("/", function (req,res){
-    res.sendFile(__dirname + "/menu.html")
+    res.sendFile(__dirname + "/index.html")
 })
 
 app.listen(3000, function (){
