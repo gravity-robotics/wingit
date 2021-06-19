@@ -21,7 +21,7 @@ db.once('open', function() {
     console.log("Connected to Mongo DB Successfully!!")
 })
 
-const Menu = require(__dirname + "/model/menu.js")
+const Menu = require(__dirname + "/src/menu.js")
 
 app.post("/menu", (request, response) => {
     
@@ -45,15 +45,15 @@ app.post("/menu", (request, response) => {
 })
 
 app.get("/create",function(req,res){
-    res.sendFile(__dirname+"/create.html")
+    res.sendFile(__dirname+"/src/create.html")
 });
 
 app.get("/demo",function(req,res){
-    res.sendFile(__dirname+"/menu.html")
+    res.sendFile(__dirname+"/src/menu.html")
 });
 
 app.get("/", function (req,res){
-    res.sendFile(__dirname + "/index.html")
+    res.sendFile(__dirname + "/src/index.html")
 })
 
 app.listen(3000, function (){
