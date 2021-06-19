@@ -3,14 +3,13 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  /* font-weight: 300; */
   color: #fff;
+  /* background: #f3f5f7; */
   text-rendering: optimizeLegibility;
-  /* font-weight: initial; */
 }
 
 .light {
-  background: #f3f5f7;
+  background: #fff;
 }
 
 #pageHeaderTitle {
@@ -82,6 +81,7 @@ body {
   flex-direction: column;
 }
 .postcard .postcard__preview-txt {
+  padding-top: .2rem;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: justify;
@@ -99,13 +99,8 @@ body {
 }
 .postcard .postcard__tagbox .tag__item {
   display: inline-block;
-  /* background: rgba(83, 83, 83, 0.4); */
-  /* border-radius: 3px; */
   padding: 2.5px 10px;
   margin: 0 5px 5px 0;
-  /* cursor: default; */
-  /* user-select: none; */
-  /* transition: background-color 0.3s; */
 }
 
 .postcard:hover .postcard__bar {

@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300"
+      rel="stylesheet"
+    />
 
     <link
       rel="stylesheet"
@@ -14,16 +17,54 @@
       crossorigin="anonymous"
     />
 
+    <script src="js/index.js"></script>
+
     <link rel="stylesheet" href="css/style_index.css" />
     <title>WingIt</title>
   </head>
-  <body id="grad">
-    <div class="container-fluid" >
+  <body>
+    <div class="container-fluid">
       <div class="shadow-lg p-3 mb-5 bg-white main-card">
         <div class="heading">
-            <p class="heading-text">COMING SOON</p>    
+          <p class="heading-text">COMING SOON</p>
         </div>
-        
+        <div>
+          <div class="wrapper centre" id="demo">
+            <a class="button" href="/demo">Demo</a>
+          </div>
+
+          <svg
+            style="visibility: hidden; position: absolute"
+            width="0"
+            height="0"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+          >
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="10"
+                  result="blur"
+                />
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                  result="goo"
+                />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid demo-div">
+      <div class="iphone-x" id="iphone">
+        <i>Speaker</i>
+        <b>Camera</b>
       </div>
     </div>
   </body>

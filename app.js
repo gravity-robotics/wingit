@@ -3,6 +3,7 @@ const mongoose = require("mongoose")
 const bodyParser = require("body-parser")
 
 const app = express()
+const port = process.env.PORT || 3000
 
 app.use( bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -47,7 +48,7 @@ app.get("/create",function(req,res){
     res.sendFile(__dirname+"/create.html")
 });
 
-app.get("/restaurant",function(req,res){
+app.get("/demo",function(req,res){
     res.sendFile(__dirname+"/menu.html")
 });
 
@@ -56,5 +57,5 @@ app.get("/", function (req,res){
 })
 
 app.listen(3000, function (){
-    console.log("Server is now running at port 3000.")
+    console.log(`Server is now running at port ${port}.`)
 })
