@@ -56,6 +56,6 @@ app.get("/", function (req,res){
     res.sendFile(__dirname + "/src/index.html")
 })
 
-app.listen(3000, function (){
+app.listen(port, function (){
     console.log(`Server is now running at port ${port}.`)
 })
