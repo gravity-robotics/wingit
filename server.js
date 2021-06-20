@@ -12,7 +12,7 @@ app.use(express.static("public"))
 var uri = "mongodb+srv://carpit680:Carpit@680@menus.b3pua.mongodb.net/menuDB?retryWrites=true&w=majority"
 var local_uri = "mongodb://127.0.0.1:27017/menuDB"
 
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true})
+mongoose.connect(local_uri, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true})
 
 const db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error:'))
