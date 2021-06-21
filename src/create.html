@@ -38,8 +38,9 @@
   <body>
     <div class="container">
       <form action="/menu" method="post">
-
-        <div class="h1 text-center text-dark" id="pageHeaderTitle">ADD A NEW MENU ITEM</div>
+        <div class="h1 text-center text-dark" id="pageHeaderTitle">
+          ADD A NEW MENU ITEM
+        </div>
 
         <div class="row">
           <div class="col-25">
@@ -57,12 +58,24 @@
         </div>
 
         <div class="col-md-12 mt-3 text-center">
-          <input type="checkbox" class="btn-check" name="" id="veg" autocomplete="off">
-          <label class="btn btn-sm btn-outline-secondary" for="veg">Vegetarian</label>
+          <label class="checkbox-level" for="veg">Vegetarian</label>
+          <input
+            type="checkbox"
+            class="grid-item form-check-input"
+            name="veg"
+            id="veg"
+            autocomplete="off"
+          />
 
-          <input type="checkbox" class="btn-check" name="gender" id="non-veg" autocomplete="off">
-          <label class="btn btn-sm btn-outline-secondary" for="non-veg">Non-vegetarian</label>
-          </div>
+          <label class="checkbox-level" for="non-veg">Non-vegetarian</label>
+          <input
+            type="checkbox"
+            class="grid-item form-check-input"
+            name="non-veg"
+            id="non-veg"
+            autocomplete="off"
+          />
+        </div>
 
         <div class="row">
           <div class="col-25">
@@ -128,12 +141,18 @@
             />
           </div>
         </div>
+
         <div class="col-md-12 mt-3 text-center">
-          <input type="checkbox" class="btn-check" name="availability" id="availability" autocomplete="off">
-          <label class="btn btn-sm btn-outline-secondary" for="availability">Check if available</label>
+          <label class="checkbox-level" for="availability">Availability</label>
+          <input
+            type="checkbox"
+            class="grid-item form-check-input filled-in"
+            name="availability"
+            id="availability"
+            autocomplete="off"
+          />
         </div>
 
-        <br />
         <div class="row">
           <input
             class="btn btn-primary"
