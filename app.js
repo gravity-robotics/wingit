@@ -1,19 +1,18 @@
 const express = require("express")
 const bodyParser = require("body-parser")
-const ejs = require("ejs")
 
 const app = express()
 const port = process.env.PORT || 3000
+
+app.set('view engine', 'ejs');
 
 app.use( bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static("public"))
 
 
-app.get("/", function (req,res){
-    res.sendFile(__dirname + "/src/index.html")
-})
+app.get("/", (req, res) => {res.render('prod')})
+app.get("/demo", (req, res) => {res.render('demo')})
+app.get("/create", (req, res) => {res.render('create')})
 
-app.listen(port, function (){
-    console.log(`Server is listening at port ${port}.`)
-})
+app.listen(port, () => {console.log(`Server is listening at port ${port}.`)})
