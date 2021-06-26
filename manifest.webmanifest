@@ -1,0 +1,15 @@
+{
+    "background_color": "#00ead3",
+    "description": "Ordering made easy",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "images/icons/wing.ico",
+        "sizes": "192x192",
+        "type": "image/ico"
+      }
+    ],
+    "name": "Wingit.Menu",
+    "short_name": "Wingit",
+    "start_url": "views/prod.ejs"
+  }
