@@ -1,1 +1,2 @@
-# menu-mvp
+# Wingit.Menu
+## Ordering made easy.
