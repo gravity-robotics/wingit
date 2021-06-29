@@ -9,7 +9,7 @@ app.use( bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static("public"))
 
-app.get("/", (req, res) => {res.render('prod')})
+app.get("/", (req, res) => {res.render('index')})
 app.get("/demo", (req, res) => {res.render('demo')})
 app.get("/create", (req, res) => {res.render('create')})
 
