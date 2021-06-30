@@ -5,10 +5,19 @@
     <title>Menu</title>
   </head>
   <body>
+    
     <div class="light">
-      <main class="container py-2">
+      <nav class="nav-bar">
         <div class="h1 text-center text-dark" id="pageHeaderTitle">MENU</div>
+        <a href="/">
+          <img class="back" src="images/icons/back.png">
+        </a>
+        
+      
+      </nav>
+      <br>
 
+      <main class="container py-2">
         <%- include('menu_template') %> 
         <%- include('menu_template') %> 
         <%- include('menu_template') %> 
@@ -22,5 +31,5 @@
         
       </main>
     </div>
-
+    
 <%- include('footer') %> 
