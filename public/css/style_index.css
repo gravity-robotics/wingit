@@ -8,7 +8,8 @@ body {
   background-image: linear-gradient(#68e0cf, #55cedc);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
+  min: height 2000px;
+  /* padding-top: 70px; */
 }
 
 
