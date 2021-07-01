@@ -80,7 +80,7 @@ body {
 
 .title-animation{
   position: absolute;
-  top: 51%;
+  top: 53%;
   left: 50%;
   width: 325px;
   transform: translateX(-50%);
