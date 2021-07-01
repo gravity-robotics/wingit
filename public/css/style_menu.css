@@ -12,18 +12,20 @@ body {
   background: #fff;
 }
 img.back{
-  margin: 1rem auto 0 .8rem;
+  margin: 1rem auto 0 7%;
   height: 25px;
   width: 25px;
+  transform: translate(-50%);
 }
 #pageHeaderTitle {
   margin-right: 50%;
   margin-top: .7rem;
   text-transform: uppercase;
-  /* text-align: center; */
   font-size: 2rem;
   float: right;
-  /* font-weight: bold; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .postcard {
