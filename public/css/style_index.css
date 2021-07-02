@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@font-face {
+  font-family: 'Beyond The Mountains';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Beyond The Mountains'), url('beyond_the_mountains.woff') format('woff');
+  }
 html {
   height: 100%;
   overflow: auto;
@@ -46,7 +51,6 @@ body {
 }
 
 .navbar{
-  /* position: fixed; */
   top: 0;
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -68,14 +72,15 @@ body {
 .title-div .wingit-title {
   position: relative;
   top: 30%;
-  transform: translate(-6px)
+  transform: translate(-8px)
 }
 
 .title-div .wingit{
   font-size: 7rem;
 }
 .wingit {
-  font: 100 40px/1.5 "Pacifico", Helvetica, sans-serif;
+  font-family:'Beyond The Mountains';
+  font-weight:normal;
   color: #fff;
   text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.1), 9px 9px 0px rgba(0, 0, 0, 0.05);
 }
