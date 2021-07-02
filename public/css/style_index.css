@@ -65,13 +65,14 @@ body {
   text-align: center;
 }
 
-.title-div .wingit {
-  position: absolute;
+.title-div .wingit-title {
+  position: relative;
   top: 30%;
-  font-size: 7rem;
-  transform: translateX(-52%);
 }
 
+.title-div .wingit{
+  font-size: 7rem;
+}
 .wingit {
   font: 100 40px/1.5 "Pacifico", Helvetica, sans-serif;
   color: #fff;
@@ -79,14 +80,18 @@ body {
 }
 
 .title-animation{
-  position: absolute;
+  position: relative;
   top: 53%;
   left: 50%;
-  width: 325px;
+  width: 360px;
   transform: translateX(-50%);
   text-align: left;
 }
-
+h1.before-typing{
+  padding-top: 30px;
+  position: relative;
+  color: #fff
+}
 a:link,
 a:visited {
   text-decoration: none;
