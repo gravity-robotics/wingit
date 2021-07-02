@@ -16,6 +16,22 @@ body {
   background-image: linear-gradient(#68e0cf, #55cedc);
 }
 
+.title-div .wingit-title {
+  position: relative;
+  top: 30%;
+  transform: translate(-8px)
+}
+
+.title-div .wingit{
+  font-size: 7rem;
+}
+
+h1.before-typing{
+  padding-top: 30px;
+  position: relative;
+  color: #fff
+}
+
 @media screen and (min-width: 992px) {
   body {
     position: absolute;
@@ -48,6 +64,18 @@ body {
   ::-webkit-scrollbar-thumb:window-inactive {
     background: #747474;
   }
+
+  .title-div .wingit-title {
+    top: 25%;
+  }
+
+  .title-div .wingit{
+    font-size: 15rem;
+  }
+
+  h1.before-typing{
+    padding-top: 60px;
+  }
 }
 
 .navbar{
@@ -69,15 +97,8 @@ body {
   text-align: center;
 }
 
-.title-div .wingit-title {
-  position: relative;
-  top: 30%;
-  transform: translate(-8px)
-}
 
-.title-div .wingit{
-  font-size: 7rem;
-}
+
 .wingit {
   font-family:'Beyond The Mountains';
   font-weight:normal;
@@ -93,11 +114,7 @@ body {
   transform: translateX(-50%);
   text-align: left;
 }
-h1.before-typing{
-  padding-top: 30px;
-  position: relative;
-  color: #fff
-}
+
 a:link,
 a:visited {
   text-decoration: none;
