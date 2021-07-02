@@ -23,7 +23,7 @@ body {
 }
 
 .title-div .wingit{
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 h1.before-typing{
@@ -32,6 +32,144 @@ h1.before-typing{
   color: #fff
 }
 
+
+
+.navbar{
+  top: 0;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-nav.me-auto {
+  margin: auto;
+}
+.navbar .navbar-toggler {
+  margin-left: auto;
+}
+
+.title-div {
+  height: calc(100vh - 56px);
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.wingit {
+  font-family:'Beyond The Mountains';
+  font-weight:normal;
+  color: #fff;
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.1), 9px 9px 0px rgba(0, 0, 0, 0.05);
+}
+
+.title-animation{
+  position: relative;
+  top: 53%;
+  left: 50%;
+  width: 360px;
+  transform: translateX(-50%);
+  text-align: left;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.title-div .scroll{
+  position: absolute;
+  left: 50%;
+  top: 85vh;
+  min-width: fit-content;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+
+.chevron {
+  position: absolute;
+  left: 35%;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  position: relative;
+  top: 75px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 500px) {
+
+  .title-div .wingit{
+    font-size: 8rem;
+  }
+}
 @media screen and (min-width: 992px) {
   body {
     position: absolute;
@@ -66,7 +204,7 @@ h1.before-typing{
   }
 
   .title-div .wingit-title {
-    top: 25%;
+    top: 17%;
   }
 
   .title-div .wingit{
@@ -76,47 +214,4 @@ h1.before-typing{
   h1.before-typing{
     padding-top: 60px;
   }
-}
-
-.navbar{
-  top: 0;
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff;
-}
-
-.navbar-nav.me-auto {
-  margin: auto;
-}
-.navbar .navbar-toggler {
-  margin-left: auto;
-}
-
-.title-div {
-  height: 100vh;
-  text-align: center;
-}
-
-
-
-.wingit {
-  font-family:'Beyond The Mountains';
-  font-weight:normal;
-  color: #fff;
-  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.1), 9px 9px 0px rgba(0, 0, 0, 0.05);
-}
-
-.title-animation{
-  position: relative;
-  top: 53%;
-  left: 50%;
-  width: 360px;
-  transform: translateX(-50%);
-  text-align: left;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-  color: #fff;
 }
