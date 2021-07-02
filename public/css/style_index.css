@@ -67,7 +67,8 @@ body {
 
 .title-div .wingit-title {
   position: relative;
-  top: 30%;
+  /* top: 30%; */
+  transform: translate(-6px)
 }
 
 .title-div .wingit{
