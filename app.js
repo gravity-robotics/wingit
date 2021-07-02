@@ -12,7 +12,7 @@ app.use(express.static("public"))
 app.get("/", (req, res) => {res.render('index')})
 app.get("/demo", (req, res) => {res.render('demo')})
 app.get("/create", (req, res) => {res.render('create')})
-app.get("/login", (req, res) => {res.render('login')})
+app.get("/admin", (req, res) => {res.render('login')})
 
 app.post('/login', (req, res) => {
   // Insert Login Code Here
