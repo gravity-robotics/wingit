@@ -51,10 +51,6 @@ app.get("/signup", (req, res) => {
   res.render("signup");
 });
 
-app.get("/create", (req, res) => {
-  res.render("create");
-});
-
 app.use(users);
 app.use(auth);
 
