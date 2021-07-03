@@ -1,8 +1,33 @@
 const express = require("express");
+const config = require('config');
 const bodyParser = require("body-parser");
 const { check, validationResult } = require("express-validator");
+const Joi = require("joi");
+Joi.objectId = require("joi-objectid")(Joi);
+const mongoose = require("mongoose");
+const users = require("./routes/users");
+const auth = require("./routes/auth");
 
 const app = express();
+
+var uri =
+  "mongodb+srv://carpit680:Carpit@680@menus.b3pua.mongodb.net/menuDB?retryWrites=true&w=majority";
+var local_uri = "mongodb://127.0.0.1:27017/menuDB";
+
+if (!config.get('PrivateKey')) {
+  console.error('FATAL ERROR: PrivateKey is not defined.');
+  process.exit(1);
+}
+
+mongoose
+  .connect(local_uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+  })
+  .then(() => console.log("Now connected to MongoDB!"))
+  .catch((err) => console.error("Something went wrong", err));
 
 app.set("view engine", "ejs");
 
@@ -13,51 +38,25 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
   res.render("index");
 });
+
 app.get("/demo", (req, res) => {
   res.render("demo");
 });
-app.get("/create", (req, res) => {
-  res.render("create");
-});
-app.get("/admin", (req, res) => {
+
+app.get("/login", (req, res) => {
   res.render("login");
 });
 
-// Validation Array
-var loginValidate = [
-  // Check Username
-  check("email", "Please enter a valid Email Address")
-    .isEmail()
-    .trim()
-    .escape()
-    .normalizeEmail(),
-
-  // Check Password
-  check("password")
-    .trim()
-    .escape()
-    .isLength({ min: 8 })
-    .withMessage("Password Must Be at Least 8 Characters"),
-  // .matches("[0-9]")
-  // .withMessage("Password Must Contain a Number")
-  // .matches("[A-Z]")
-  // .withMessage("Password Must Contain an Uppercase Letter")
-];
-
-app.post("/admin", loginValidate, (req, res) => {
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    return res.status(422).json({ errors: errors.array()[0].msg });
-  } else {
-    let email = req.body.email;
-    let password = req.body.password;
-    if (req.body.button == "login") {
-      res.send(`Email ID: ${email} Password: ${password}`);
-    } else if (req.body.button == "signup") {
-      res.render("coming-soon");
-    }
-  }
+app.get("/signup", (req, res) => {
+  res.render("signup");
 });
+
+app.get("/create", (req, res) => {
+  res.render("create");
+});
+
+app.use(users);
+app.use(auth);
 
 app.listen(process.env.PORT || 3000, function () {
   console.log(
