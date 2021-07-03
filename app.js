@@ -49,7 +49,7 @@ app.post("/admin", loginValidate, (req, res) => {
   if (!errors.isEmpty()) {
     return res.status(422).json({ errors: errors.array()[0].msg });
   } else {
-    let username = req.body.username;
+    let email = req.body.email;
     let password = req.body.password;
     if (req.body.button == "login") {
       res.send(`Email ID: ${email} Password: ${password}`);
