@@ -12,29 +12,29 @@
     <div class="login-main-text">
        <h2 class="wingit">Wingit</h2>
        <h2>Restaurant Login</h2>
-       <p>Login or register from here to edit your menu.</p>
+       <p>Login or Sign Up to create or edit your menu.</p>
     </div>
  </div>
  
  <div class="main">
     <div class="col-md-6 col-sm-12">
        <div class="login-form">
-          <form action="/login" method="post">
+          <form action="/admin" method="post">
 
              <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control" placeholder="Username" required>
+                <label>Email ID</label>
+                <input type="email" name="email" class="form-control" placeholder="Email ID" required>
              </div>
 
              <div class="form-group">
                 <label>Password</label>
-                <input type="password" name="password" class="form-control" placeholder="Password" required>
+                <input type="password" name="password" class="form-control" placeholder="Password" minlength="8" required>
              </div>
 
              <br>
 
-             <button type="submit" class="btn btn-black login" value="login">Login</button>
-             <button type="submit" class="btn btn-black register" value="register">Register</button>
+             <button type="submit" name="button" class="btn btn-black login" value="login">Login</button>
+             <button type="submit" name="button" class="btn btn-black register" value="signup">Sign Up</button>
 
           </form>
        </div>
