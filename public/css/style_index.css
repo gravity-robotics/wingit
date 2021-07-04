@@ -1,9 +1,10 @@
 @font-face {
-  font-family: 'Beyond The Mountains';
+  font-family: "Beyond The Mountains";
   font-style: normal;
   font-weight: normal;
-  src: local('Beyond The Mountains'), url('beyond_the_mountains.woff') format('woff');
-  }
+  src: local("Beyond The Mountains"),
+    url("beyond_the_mountains.woff") format("woff");
+}
 html {
   height: 100%;
   overflow: auto;
@@ -13,28 +14,16 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   min: height 2000px;
-  background-image: linear-gradient(#68e0cf, #55cedc);
+  background-color: #fff;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-.title-div .wingit-title {
-  position: relative;
-  top: 30%;
-  transform: translate(-8px)
+::-webkit-scrollbar {
+  display: none;
 }
 
-.title-div .wingit{
-  font-size: 6rem;
-}
-
-h1.before-typing{
-  padding-top: 30px;
-  position: relative;
-  color: #fff
-}
-
-
-
-.navbar{
+.navbar {
   top: 0;
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -46,22 +35,41 @@ h1.before-typing{
 }
 .navbar .navbar-toggler {
   margin-left: auto;
+  margin-right: 2rem;
 }
 
 .title-div {
-  height: calc(100vh - 56px);
+  height: 100vh;
+  width: 100%;
   text-align: center;
-  padding-top: 4rem;
+  border-radius: 0 0 200px 0;
+  background-image: linear-gradient(#68e0cf, #20bdff);
 }
 
 .wingit {
-  font-family:'Beyond The Mountains';
-  font-weight:normal;
+  font-family: "Beyond The Mountains";
+  font-weight: normal;
   color: #fff;
   text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.1), 9px 9px 0px rgba(0, 0, 0, 0.05);
 }
 
-.title-animation{
+.title-div .wingit-title {
+  position: relative;
+  top: 30%;
+  transform: translate(-8px);
+}
+
+.title-div .wingit {
+  font-size: 6rem;
+}
+
+h1.before-typing {
+  padding-top: 30px;
+  position: relative;
+  color: #fff;
+}
+
+.title-animation {
   position: relative;
   top: 53%;
   left: 50%;
@@ -76,7 +84,8 @@ a:visited {
   color: #fff;
 }
 
-.title-div .scroll{
+/* Scroll down icon animamtion */
+.title-div .scroll {
   position: absolute;
   left: 50%;
   top: 85vh;
@@ -107,7 +116,7 @@ a:visited {
 
 .chevron:before,
 .chevron:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 0;
   height: 100%;
@@ -129,7 +138,6 @@ a:visited {
 @keyframes move {
   25% {
     opacity: 1;
-
   }
   33% {
     opacity: 1;
@@ -154,7 +162,7 @@ a:visited {
   color: #fff;
   text-transform: uppercase;
   white-space: nowrap;
-  opacity: .25;
+  opacity: 0.25;
   animation: pulse 2s linear alternate infinite;
 }
 
@@ -164,54 +172,55 @@ a:visited {
   }
 }
 
-@media screen and (min-width: 500px) {
+/* About section */
+#about {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  background-image: linear-gradient( #20bdff, #f089e5);
+}
 
-  .title-div .wingit{
+.about-div {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 200px 0 200px  0;
+}
+
+/* Plans section */
+#plans {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+background-color: #fff;
+}
+
+.plans-div {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#f089e5,#ec8b6b );
+  border-radius: 200px 0 0  0;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 500px) {
+  .title-div .wingit {
     font-size: 8rem;
   }
 }
+
+
 @media screen and (min-width: 992px) {
-  body {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    bottom: 20px;
-    right: 20px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  
-  ::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    background: #ffffff;
-    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
-  }
-  ::-webkit-scrollbar-thumb:window-inactive {
-    background: #747474;
-  }
-
   .title-div .wingit-title {
     top: 17%;
   }
 
-  .title-div .wingit{
+  .title-div .wingit {
     font-size: 15rem;
   }
 
-  h1.before-typing{
+  h1.before-typing {
     padding-top: 60px;
   }
 }
