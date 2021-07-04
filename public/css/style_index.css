@@ -205,9 +205,25 @@ background-color: #fff;
 /* Media queries */
 
 @media screen and (min-width: 500px) {
+  .title-div {
+    border-radius: 0 0 100px 0;
+  }
+
   .title-div .wingit {
     font-size: 8rem;
   }
+
+  .about-div {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 100px 0 100px  0;
+  }
+
+  .plans-div {
+    border-radius: 100px 0 100px  0;
+  }
+
 }
 
 
