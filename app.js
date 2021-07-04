@@ -20,7 +20,7 @@ if (!config.get('PrivateKey')) {
 }
 
 mongoose
-  .connect(local_uri, {
+  .connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
