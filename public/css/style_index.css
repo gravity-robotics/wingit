@@ -108,6 +108,15 @@ a.nav-link:hover {
   background-image: linear-gradient(#68e0cf, #20bdff);
 }
 
+
+
+.wingit {
+  font-family: "Beyond The Mountains";
+  font-weight: normal;
+  color: #fff;
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1), 7px 7px 0px rgba(0, 0, 0, 0.05);
+}
+
 @keyframes opacity {
   0% {
     opacity: 0;
@@ -116,12 +125,7 @@ a.nav-link:hover {
     opacity: 1;
   }
 }
-
 .wingit {
-  font-family: "Beyond The Mountains";
-  font-weight: normal;
-  color: #fff;
-  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1), 7px 7px 0px rgba(0, 0, 0, 0.05);
   animation: 4s ease-out 0s 1 opacity;
 }
 
