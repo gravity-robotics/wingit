@@ -108,11 +108,21 @@ a.nav-link:hover {
   background-image: linear-gradient(#68e0cf, #20bdff);
 }
 
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .wingit {
   font-family: "Beyond The Mountains";
   font-weight: normal;
   color: #fff;
   text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.1), 9px 9px 0px rgba(0, 0, 0, 0.05);
+  animation: 4s ease-out 0s 1 opacity;
 }
 
 .title-div .wingit-title {
