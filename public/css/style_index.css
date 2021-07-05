@@ -42,8 +42,8 @@ body {
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 a.nav-link:hover,
@@ -93,7 +93,6 @@ a.nav-link:hover {
   stroke-width: 4;
 }
 
-
 #home {
   height: 100vh;
   width: 100%;
@@ -108,8 +107,6 @@ a.nav-link:hover {
   background-image: linear-gradient(#68e0cf, #20bdff);
 }
 
-
-
 .wingit {
   font-family: "Beyond The Mountains";
   font-weight: normal;
@@ -117,22 +114,9 @@ a.nav-link:hover {
   text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1), 7px 7px 0px rgba(0, 0, 0, 0.05);
 }
 
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.wingit {
-  animation: 4s ease-out 0s 1 opacity;
-}
-
 .title-div .wingit-title {
   position: relative;
   top: 35%;
-  /* transform: translate(-4px); */
 }
 
 .title-div .wingit {
