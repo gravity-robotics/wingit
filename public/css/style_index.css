@@ -25,6 +25,7 @@ body {
   margin: 1rem 2rem;
   background-color: rgba(230, 230, 230, 0.733);
   border-radius: 1rem;
+  padding: 0;
 }
 .navbar-light .navbar-nav .nav-link {
   color: rgb(95, 95, 95);
@@ -35,13 +36,63 @@ body {
 }
 .navbar .navbar-toggler {
   margin-left: auto;
-  margin-right: 0.2rem;
+  margin-right: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 a.nav-link:hover,
 a.nav-link:hover {
   color: rgb(0, 0, 0);
 }
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 4;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 4;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 4;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 4;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 4;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 4;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 4;
+}
+
 
 #home {
   height: 100vh;
@@ -270,7 +321,7 @@ a:visited {
 
 @media screen and (min-width: 500px) {
   .navbar {
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .title-div {
     border-radius: 0 0 100px 0;
