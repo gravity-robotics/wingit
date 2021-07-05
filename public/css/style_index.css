@@ -121,14 +121,14 @@ a.nav-link:hover {
   font-family: "Beyond The Mountains";
   font-weight: normal;
   color: #fff;
-  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.1), 9px 9px 0px rgba(0, 0, 0, 0.05);
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1), 7px 7px 0px rgba(0, 0, 0, 0.05);
   animation: 4s ease-out 0s 1 opacity;
 }
 
 .title-div .wingit-title {
   position: relative;
-  top: 30%;
-  transform: translate(-8px);
+  top: 35%;
+  /* transform: translate(-4px); */
 }
 
 .title-div .wingit {
