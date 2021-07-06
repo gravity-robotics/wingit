@@ -57,7 +57,7 @@ img.back {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  border-radius: .6rem;
+  border-radius: 1.5rem;
   left: 50%;
   transform: translate(-50%);
   z-index: 100;
@@ -76,8 +76,8 @@ img.back {
   text-align: center;
   position: relative;
   top: 27%;
-  margin: auto .7rem;
-  padding: 4px;
+  margin: auto .3rem auto .7rem;
+  padding: 6px;
   display: inline;
   background-color: white;
   border-radius: 20px;
