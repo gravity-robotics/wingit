@@ -11,7 +11,7 @@ const auth = require("./routes/auth");
 const app = express();
 
 var uri =
-  "mongodb+srv://carpit680:Carpit@680@menus.b3pua.mongodb.net/menuDB?retryWrites=true&w=majority";
+  "mongodb+srv://admin-user:Carpit@680@menus.b3pua.mongodb.net/menuDB?retryWrites=true&w=majority";
 var local_uri = "mongodb://127.0.0.1:27017/menuDB";
 
 if (!config.get('PrivateKey')) {
@@ -41,6 +41,10 @@ app.get("/", (req, res) => {
 
 app.get("/demo", (req, res) => {
   res.render("demo");
+});
+
+app.get("/test", (req, res) => {
+  res.render("categories");
 });
 
 app.get("/login", (req, res) => {

@@ -5,7 +5,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   color: #fff;
-  
+  height: 100%;
   text-rendering: optimizeLegibility;
 }
 
@@ -19,9 +19,12 @@ img.back{
   width: 24px;
   transform: translate(-50%);
 }
+.nav-bar {
+  height: 3.5rem;
+}
 #pageHeaderTitle {
   margin-right: 50%;
-  margin-top: .6rem;
+  margin-top: .5rem;
   text-transform: uppercase;
   font-size: 2.15rem;
   float: right;
@@ -30,17 +33,55 @@ img.back{
   transform: translateX(-50%);
 }
 
-.sticky-category {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 1rem;
-  height: 2rem;
-  width: 80vw;
-  background-color: white;
-  padding: 50px;
-  font-size: 20px;
+.categories {
+  display: inline;
+  /* position: absolute; */
+  top: 3.1rem;
+  /* height: 2.5rem; */
+  width: 90%;
+  background-color: whitesmoke;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  border-radius: 1.5rem;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 100;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
+.sticky {
+  position: fixed;
+  top: .6rem;
+  width: 94%;
+  height: 2.5rem;
+}
+
+.categories::-webkit-scrollbar {
+    display: none;
+  }
+
+.categories .category-link {
+    position: relative;
+    top: 29%;
+  padding: 0.6rem;
+  display: inline;
+  background-color: whitesmoke;
+  color: white;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+a.category {
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+}
+
+.container{
+  position: relative;
+  top: .7rem;
+}
 .postcard {
   flex-wrap: inherit;
   display: flex;

@@ -14,13 +14,33 @@
         </a>      
       </nav>
 
-      <!-- <div class="sticky-categories">
-        <div>
-          Category1
+      <div class="categories" id="categories">
+        <div class="category-link">
+            <a href="#category1" class="category">category1</a> 
         </div>
-      </div> -->
 
-      <br>
+        <div class="category-link">
+            <a href="#category2" class="category">category2</a> 
+        </div>
+        <div class="category-link">
+            <a href="#category1" class="category">category1</a> 
+        </div>
+
+        <div class="category-link">
+            <a href="#category2" class="category">category2</a> 
+        </div>
+        <div class="category-link">
+            <a href="#category1" class="category">category1</a> 
+        </div>
+
+        <div class="category-link">
+            <a href="#category2" class="category">category2</a> 
+        </div>
+        <div class="category-link">
+            <a href="#category1" class="category">category1</a> 
+        </div>
+        
+    </div>
 
       <main class="container py-2">
         <%- include('menu') %> 
@@ -36,5 +56,20 @@
         
       </main>
     </div>
-    
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var categories = document.getElementById("categories");
+      var sticky = categories.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          categories.classList.add("sticky")
+          categories.classList.remove("non-sticky");
+        } else {
+          categories.classList.add("non-sticky")
+          categories.classList.remove("sticky");
+        }
+      }
+      </script>
 <%- include('footer') %> 

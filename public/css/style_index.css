@@ -260,7 +260,7 @@ a:visited {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(#f089e5, #ec8b6b);
-  border-radius: 40px 0 0 0;
+  border-radius: 40px 0 40px 0;
 }
 
 /* Contact section */
