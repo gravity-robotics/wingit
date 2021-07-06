@@ -62,7 +62,7 @@ img.back {
   left: 50%;
   transform: translate(-50%);
   z-index: 100;
-
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
   /* IE and Edge */
   -ms-overflow-style: none; 
   scrollbar-width: none;
