@@ -51,7 +51,7 @@ img.back {
 .sticky,
 .categories {
   width: 94%;
-  height: 3rem;
+  height: 3.1rem;
   display: inline;
   background-color:  #ffffff;
   /* background-color: rgba(230, 230, 230, 0.733); */
@@ -76,7 +76,7 @@ img.back {
 .category-link {
   text-align: center;
   position: relative;
-  top: 26.5%;
+  top: 26%;
   margin: auto .3rem auto .7rem;
   padding: 6px;
   display: inline;
