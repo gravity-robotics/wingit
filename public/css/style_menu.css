@@ -38,21 +38,22 @@ img.back {
 }
 
 .categories {
+  position: absolute;
   top: 3.1rem;
 }
 
 .sticky {
+  position: fixed;
   top: 0.6rem;
 }
 
 .sticky,
 .categories {
-  position: fixed;
   width: 94%;
   height: 2.5rem;
   display: inline;
-  /* background-image: linear-gradient(#f0a4e8, #ec9b80); */
-  background-color: rgba(230, 230, 230, 0.733);
+  background-image: linear-gradient(#ff92f4b7, #ff9977b4);
+  /* background-color: rgba(230, 230, 230, 0.733); */
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -79,10 +80,9 @@ img.back {
   padding: 4px;
   display: inline;
   background-color: white;
-  /* background-image: linear-gradient(#f0a4e8ab, #ec9b80); */
-  border-radius: 7px;
+  border-radius: 20px;
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 a.category {
