@@ -1,79 +1,98 @@
-<%- include('header') %> 
+<%- include('header') %>
 
-    <link href="css/style_menu.css" rel="stylesheet" />
+  <link href="css/style_menu.css" rel="stylesheet" />
 
-    <title>Menu</title>
+  <title>Menu</title>
   </head>
+
   <body>
-    
+
     <div class="gradient">
       <nav class="nav-bar">
         <div class="h1 text-center text-dark" id="pageHeaderTitle">MENU</div>
         <a href="/">
           <img class="back" src="images/icons/back.png">
-        </a>      
+        </a>
       </nav>
 
       <div class="categories " id="categories">
         <div class="category-link wobble-vertical-on-hover">
-            <a href="#category1" class="category">category1</a> 
+          <a href="#category1" class="category">category1</a>
         </div>
 
         <div class="category-link wobble-vertical-on-hover">
-            <a href="#category2" class="category">category2</a> 
+          <a href="#category2" class="category">category2</a>
         </div>
         <div class="category-link wobble-vertical-on-hover">
-            <a href="#category1" class="category">category1</a> 
+          <a href="#category3" class="category">category3</a>
         </div>
 
         <div class="category-link wobble-vertical-on-hover">
-            <a href="#category2" class="category">category2</a> 
+          <a href="#category4" class="category">category4</a>
         </div>
         <div class="category-link wobble-vertical-on-hover">
-            <a href="#category1" class="category">category1</a> 
+          <a href="#category5" class="category">category5</a>
         </div>
 
-        
-    </div>
- 
+
+      </div>
+
       <main class="container py-2">
         <div id="category1">
           <h1 class="category-heading">Category1</h1>
-        <%- include('menu') %> 
-        <%- include('menu') %> 
-        <%- include('menu') %> 
-        <%- include('menu') %>
-        <%- include('menu') %> 
-        <%- include('menu') %>
-        <%- include('menu') %> 
+          <%- include('menu') %>
+            <%- include('menu') %>
+              <%- include('menu') %>
+                <%- include('menu') %>
+                  <%- include('menu') %>
+                    <%- include('menu') %>
+                      <%- include('menu') %>
         </div>
+
         <div id="category2">
-          
           <h1 class="category-heading">Category2</h1>
-        <%- include('menu') %> 
-        <%- include('menu') %> 
-        <%- include('menu') %> 
-        <%- include('menu') %>
-        <%- include('menu') %> 
-        <%- include('menu') %>
-        <%- include('menu') %> 
-        
+          <%- include('menu') %>
+            <%- include('menu') %>
+              <%- include('menu') %>
+                <%- include('menu') %>
+
+
         </div>
-        <h1 class="category-heading">Category3</h1>
-        <%- include('menu') %>
-        <%- include('menu') %> 
-        <%- include('menu') %>
-        <%- include('menu') %> 
-        <%- include('menu') %>
-        
+
+        <div id="category3">
+          <h1 class="category-heading">Category3</h1>
+          <%- include('menu') %>
+            <%- include('menu') %>
+              <%- include('menu') %>
+                <%- include('menu') %>
+
+
+        </div>
+
+        <div id="category4">
+          <h1 class="category-heading">Category4</h1>
+          <%- include('menu') %>
+            <%- include('menu') %>
+              <%- include('menu') %>
+                <%- include('menu') %>
+        </div>
+
+        <div id="category5">
+          <h1 class="category-heading">Category5</h1>
+          <%- include('menu') %>
+            <%- include('menu') %>
+              <%- include('menu') %>
+                <%- include('menu') %>
+        </div>
+
       </main>
     </div>
     <script>
-      window.onscroll = function() {myFunction()};
-      
+      window.onscroll = function () { myFunction() };
+
       var categories = document.getElementById("categories");
       var sticky = categories.offsetTop;
-      
+
       function myFunction() {
         if (window.pageYOffset >= sticky) {
           categories.classList.add("sticky")
@@ -83,5 +102,5 @@
           categories.classList.remove("sticky");
         }
       }
-      </script>
-<%- include('footer') %> 
+    </script>
+    <%- include('footer') %>
