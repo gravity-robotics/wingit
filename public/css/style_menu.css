@@ -31,7 +31,8 @@ img.back {
   margin-right: 50%;
   margin-top: 0.5rem;
   text-transform: uppercase;
-  font-size: 2.15rem;
+  font-size: 2rem;
+  font-weight: bold;
   float: right;
   position: absolute;
   left: 50%;
