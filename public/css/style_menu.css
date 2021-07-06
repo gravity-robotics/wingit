@@ -166,6 +166,7 @@ a.category:hover, a.category:active, a.category:focus {
     transform: translateY(0);
   }
 }
+
 .wobble-vertical-on-hover {
   display: inline-block;
   vertical-align: middle;
@@ -173,6 +174,7 @@ a.category:hover, a.category:active, a.category:focus {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
 .wobble-vertical-on-hover:hover, .wobble-vertical-on-hover:focus, .wobble-vertical-on-hover:active {
   -webkit-animation-name: wobble-vertical-on-hover;
   animation-name: wobble-vertical-on-hover;
@@ -186,7 +188,7 @@ a.category:hover, a.category:active, a.category:focus {
 
 .container {
   position: relative;
-  top: 2.9rem;
+  top: 2.4rem;
 }
 
 .postcard {
