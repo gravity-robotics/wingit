@@ -51,9 +51,9 @@ img.back {
 .sticky,
 .categories {
   width: 94%;
-  height: 2.5rem;
+  height: 3rem;
   display: inline;
-  background-color:  #4B0082;
+  background-color:  #ffffff;
   /* background-color: rgba(230, 230, 230, 0.733); */
   overflow-x: auto;
   overflow-y: hidden;
@@ -76,24 +76,24 @@ img.back {
 .category-link {
   text-align: center;
   position: relative;
-  top: 27%;
+  top: 26.5%;
   margin: auto .3rem auto .7rem;
   padding: 6px;
   display: inline;
-  background-color: white;
+  background-color: #FFE5B4;
   border-radius: 20px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bolder;
 }
 
 a.category {
   text-decoration: none;
-  color: rgb(94, 94, 94);
+  color: rgb(0, 0, 0);
 }
 
 .container {
   position: relative;
-  top: 2.3rem;
+  top: 2.9rem;
 }
 
 .postcard {
@@ -159,7 +159,7 @@ a.category {
   flex-direction: column;
 }
 .postcard .postcard__preview-txt {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   padding-top: 0.2rem;
   overflow: hidden;
   text-overflow: ellipsis;
