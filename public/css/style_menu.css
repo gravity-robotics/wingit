@@ -9,6 +9,7 @@ body {
   color: #fff;
   height: fit-content;
   text-rendering: optimizeLegibility;
+  background-color: rgb(240, 240, 240);
 }
 
 .gradient {
@@ -82,11 +83,24 @@ img.back {
   font-size: 1rem;
   font-weight: bolder;
 }
+.category-link:hover, .category-link:active, .category-link:focus {
+  /* background-color: #9afff2; */
+  background-image: linear-gradient(#68e0cf, #20bdff );
+}
+
+.category-highlight {
+
+}
 
 a.category {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+
+a.category:hover, a.category:active, a.category:focus {
+  color: rgb(255, 255, 255);
+}
+
 .category-heading {
   color: #424242;
   margin-top: 0.5rem;
@@ -298,6 +312,8 @@ a.category {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    min-width: 574px;
+    min-width: 769px;
   }
+
+  
 }
