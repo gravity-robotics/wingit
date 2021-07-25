@@ -1,0 +1,418 @@
+@font-face {
+  src: local("Beyond The Mountains"),
+    url("beyond_the_mountains.woff") format("woff");
+  font-family: "Beyond The Mountains";
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 2000px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  margin: 1rem 1rem;
+  background-color: rgba(230, 230, 230, 0.733);
+  border-radius: 1rem;
+  padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(95, 95, 95);
+}
+
+.navbar-nav.me-auto {
+  margin: auto;
+}
+
+.navbar .navbar-toggler {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+a.nav-link:hover,
+a.nav-link:hover {
+  color: rgb(0, 0, 0);
+}
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 4;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 4;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 4;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 4;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 4;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 4;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 4;
+}
+
+#home {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  background-color: white;
+}
+
+.title-div {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  border-radius: 0 0 40px 0;
+  background-image: linear-gradient(#68e0cf, #20bdff);
+}
+
+.wingit {
+  font-family: "Beyond The Mountains";
+  font-weight: normal;
+  color: #fff;
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1), 7px 7px 0px rgba(0, 0, 0, 0.05);
+}
+
+.title-div .wingit-title {
+  position: relative;
+  top: 35%;
+}
+
+.title-div .wingit {
+  font-size: 6rem;
+}
+
+h1.before-typing {
+  padding-top: 30px;
+  position: relative;
+  color: #fff;
+}
+
+.title-animation {
+  position: relative;
+  top: 53%;
+  left: 50%;
+  width: 360px;
+  transform: translateX(-50%);
+  text-align: left;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Scroll down icon animamtion */
+.container.scroll {
+  position: absolute;
+  left: 50%;
+  top: 85vh;
+  min-width: fit-content;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+
+.chevron {
+  position: absolute;
+  left: 35%;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  position: relative;
+  top: 75px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+/* About section */
+#about {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  padding: 0;
+  background-image: linear-gradient(#20bdff, #f089e5);
+}
+
+.about-div {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 40px 0 40px 0;
+}
+
+/* Plans section */
+#plans {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  background-color: #fff;
+}
+
+.plans-div {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#f089e5, #ec8b6b);
+  border-radius: 40px 0 40px 0;
+}
+
+/* Contact section */
+#contact {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  padding: 0;
+  background-image: linear-gradient(#ec8b6b, #68e0cf);
+}
+
+.contact-div {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 40px 0 40px 0;
+}
+
+/* Footer section */
+#footer {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  padding: 0;
+  background-color: #fff;
+}
+
+.footer-div {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#68e0cf, #20bdff);
+  border-radius: 40px 0 0 0;
+}
+
+.footer-bar {
+  position: absolute;
+  bottom: 0;
+  height: 6rem;
+  width: calc(100vw - 2rem);
+  min-width: 8rem;
+  background-color: rgba(230, 230, 230, 0.733);
+  border-radius: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.footer-bar a.wingit {
+  position: relative;
+  top: 40%;
+  font-size: 1rem;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1), 4px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Media queries */
+@media screen and (min-width: 500px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+  .title-div {
+    border-radius: 0 0 100px 0;
+  }
+
+  .title-div .wingit {
+    font-size: 8rem;
+  }
+
+  .about-div {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .about-div,
+  .plans-div,
+  .contact-div {
+    border-radius: 100px 0 100px 0;
+  }
+
+  .footer-div {
+    border-radius: 100px 0 0 0;
+  }
+
+  .footer-bar {
+    height: 8rem;
+    width: calc(100vw - 4rem);
+    margin: 0 2rem 2rem 2rem;
+  }
+
+  .footer-bar a.wingit {
+    top: 35%;
+    font-size: 2rem;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.05);
+    /* transform: translateY(-50%); */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .title-div {
+    border-radius: 0 0 150px 0;
+  }
+  .title-div .wingit-title {
+    top: 17%;
+  }
+
+  .title-div .wingit {
+    font-size: 15rem;
+  }
+
+  h1.before-typing {
+    padding-top: 60px;
+  }
+  .about-div {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .about-div,
+  .plans-div,
+  .contact-div {
+    border-radius: 150px 0 150px 0;
+  }
+  .footer-div {
+    border-radius: 150px 0 0 0;
+  }
+
+  .footer-bar {
+    height: 8rem;
+    width: calc(100vw - 4rem);
+    margin: 0 2rem 2rem 2rem;
+  }
+
+  .footer-bar a.wingit {
+    top: 35%;
+    font-size: 2rem;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.05);
+    /* transform: translateY(-50%); */
+  }
+}
