@@ -1,7 +1,6 @@
-
 const Demo = [
   {
-    categoryTitle: "Soup",
+    categoryTitle: "Starters",
     dishes: [
       {
         _id: "1",
@@ -10,6 +9,9 @@ const Demo = [
         cookingTime: "15",
         description:
           "A classic dish of the English-speaking world. The dish is made of cheese and crackers, and the recipe calls for the inclusion of butter, salt, and a little extra salt. The dish is served with crackers or crackers and crackers.",
+        isVeg: true,
+        isAvailable: true,
+        choices: "Half/Full",
       },
       {
         _id: "2",
@@ -18,6 +20,9 @@ const Demo = [
         cookingTime: "20",
         description:
           "A dish of chicken, rice, and sauce. The recipe calls for the inclusion of rice, chicken, and sauce. The dish is served with rice.",
+        isVeg: false,
+        isAvailable: false,
+        choices: "Half/Full",
       },
       {
         _id: "3",
@@ -26,6 +31,9 @@ const Demo = [
         cookingTime: "25",
         description:
           "A dish of steak, rice, and sauce. The recipe calls for the inclusion of rice, steak, and sauce. The dish is served with rice.",
+        isVeg: false,
+        isAvailable: true,
+        choices: "Half/Full",
       },
       {
         _id: "4",
@@ -34,11 +42,14 @@ const Demo = [
         cookingTime: "20",
         description:
           "A dish of chicken, rice, and sauce. The recipe calls for the inclusion of rice, chicken, and sauce. The dish is served with rice.",
+        isVeg: false,
+        isAvailable: true,
+        choices: "Half/Full",
       },
     ],
   },
   {
-    categoryTitle: "Salad",
+    categoryTitle: "Main Course",
     dishes: [
       {
         _id: "8",
@@ -47,6 +58,9 @@ const Demo = [
         cookingTime: "15",
         description:
           "A classic dish of the English-speaking world. The dish is made of cheese and crackers, and the recipe calls for the inclusion of butter, salt, and a little extra salt. The dish is served with crackers or crackers and crackers.",
+        isVeg: true,
+        isAvailable: true,
+        choices: "Half/Full",
       },
       {
         _id: "9",
@@ -55,6 +69,9 @@ const Demo = [
         cookingTime: "25",
         description:
           "A dish of steak, rice, and sauce. The recipe calls for the inclusion of rice, steak, and sauce. The dish is served with rice.",
+        isVeg: false,
+        isAvailable: true,
+        choices: "Half/Full",
       },
       {
         _id: "10",
@@ -63,6 +80,9 @@ const Demo = [
         cookingTime: "20",
         description:
           "A dish of chicken, rice, and sauce. The recipe calls for the inclusion of rice, chicken, and sauce. The dish is served with rice.",
+        isVeg: false,
+        isAvailable: true,
+        choices: "Half/Full",
       },
       {
         _id: "11",
@@ -71,6 +91,9 @@ const Demo = [
         cookingTime: "25",
         description:
           "A dish of steak, rice, and sauce. The recipe calls for the inclusion of rice, steak, and sauce. The dish is served with rice.",
+        isVeg: false,
+        isAvailable: true,
+        choices: "Half/Full",
       },
       {
         _id: "12",
@@ -79,6 +102,9 @@ const Demo = [
         cookingTime: "20",
         description:
           "A dish of chicken, rice, and sauce. The recipe calls for the inclusion of rice, chicken, and sauce. The dish is served with rice.",
+        isVeg: false,
+        isAvailable: true,
+        choices: "Half/Full",
       },
       {
         _id: "13",
@@ -87,6 +113,9 @@ const Demo = [
         cookingTime: "25",
         description:
           "A dish of steak, rice, and sauce. The recipe calls for the inclusion of rice, steak, and sauce. The dish is served with rice.",
+        isVeg: false,
+        isAvailable: true,
+        choices: "Half/Full",
       },
       {
         _id: "14",
@@ -95,8 +124,11 @@ const Demo = [
         cookingTime: "20",
         description:
           "A dish of chicken, rice, and sauce. The recipe calls for the inclusion of rice, chicken, and sauce. The dish is served with rice.",
+        isVeg: false,
+        isAvailable: true,
+        choices: "Half/Full",
       },
     ],
-  }
-]
+  },
+];
 export default Demo;

@@ -12,9 +12,7 @@ function ItemCard(props) {
         <h1 className="postcard__title">{props.title}</h1>
         <div className="postcard__bar"></div>
         <div className="postcard__preview-txt">{props.description}</div>
-        {/* <div className="postcard__preview-txt">
-      Choice1/Choice2
-      </div> */}
+        <div className="postcard__preview-txt">{props.choices}</div>
         <ul className="postcard__tagbox">
           <li className="tag__item">
             <i className="fa fa-inr"></i> {props.price}
@@ -25,9 +23,11 @@ function ItemCard(props) {
           <li className="tag__item">
             <img
               className="veg_nonveg"
-              src="images/icons/veg.png"
+              src={"images/icons/" + (props.isVeg ? "veg" : "nonveg") + ".png"}
               alt="triangle with equal sides"
-              srcSet="images/icons/veg.svg"
+              srcSet={
+                "images/icons/" + (props.isVeg ? "veg" : "nonveg") + ".svg"
+              }
             />
           </li>
         </ul>
