@@ -1,11 +1,11 @@
 import React from "react";
 import CategoryTag from "./CategoryTag";
-import Menu from "./Demo";
+import menu from "./Demo";
 
 function CategoriesNavbar() {
   return (
     <div className="categories" id="categories">
-      {Menu.map((item) => (
+      {menu.categories.map((item) => (
         <CategoryTag title={item.categoryTitle} />
       ))}
     </div>
