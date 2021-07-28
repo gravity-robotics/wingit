@@ -247,13 +247,14 @@ a:visited {
 /* About section */
 #about {
   position: relative;
-  height: 50vh;
+  max-height: 200vh;
   width: 100%;
   padding: 0;
   background-image: linear-gradient(#20bdff, #f089e5);
 }
 
 .about-div {
+  align-items: center;
   height: 100%;
   width: 100%;
   background-color: rgb(49, 49, 49);
@@ -261,25 +262,37 @@ a:visited {
 }
 
 .pushed {
-  align-items: center;
+  /* align-items: center; */
   background-color: rgb(49, 49, 49);
-  box-shadow: 
-    8px 8px 12px 0 rgba(0, 0, 0, 0.15),
+  box-shadow: 8px 8px 12px 0 rgba(0, 0, 0, 0.15),
     -6px -6px 10px 0 rgba(255, 255, 255, 0.1);
   border-radius: 50px;
   display: flex;
-  height: 200px;
-  justify-content: center;
-  margin-right: 4rem;
-  width: 200px;
+  /* height: fit-content;
+  justify-content: center; */
+  /* margin-right: 4rem; */
+  /* padding: 0.5rem; */
+  /* width: 200px; */
 }
 
-.card1 {
+.cards {
   position: relative;
   top: 50%;
   left: 50%;
-  height: 20rem;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 4rem;
+  width: 80%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.card1 {
+
+  min-height: 25rem;
+  
 }
 
 /* Plans section */
@@ -354,7 +367,7 @@ a:visited {
     padding: 0.5rem;
   }
   .title-div {
-    border-radius: 0 0 100px 0;
+    border-radius: 0 0 40px 0;
   }
 
   .title-div .wingit {
@@ -367,14 +380,22 @@ a:visited {
     background-color: rgb(49, 49, 49);
   }
 
+  .cards {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+  }
+
   .about-div,
   .plans-div,
   .contact-div {
-    border-radius: 100px 0 100px 0;
+    border-radius: 40px 0 40pxx 0;
   }
 
   .footer-div {
-    border-radius: 100px 0 0 0;
+    border-radius: 40px 0 0 0;
   }
 
   .footer-bar {
@@ -397,7 +418,7 @@ a:visited {
   }
 
   .title-div {
-    border-radius: 0 0 150px 0;
+    border-radius: 0 0 40px 0;
   }
   .title-div .wingit-title {
     top: 17%;
@@ -411,18 +432,28 @@ a:visited {
     padding-top: 60px;
   }
   .about-div {
-    height: 100%;
+    min-height: 400px;
     width: 100%;
     background-color: rgb(49, 49, 49);
+  }
+
+  .cards {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 6rem;
   }
 
   .about-div,
   .plans-div,
   .contact-div {
-    border-radius: 150px 0 150px 0;
+    border-radius: 40px 0 40px 0;
   }
   .footer-div {
-    border-radius: 150px 0 0 0;
+    border-radius: 40px 0 0 0;
   }
 
   .footer-bar {
