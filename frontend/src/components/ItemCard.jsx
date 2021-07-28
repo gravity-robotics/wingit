@@ -14,17 +14,21 @@ function ItemCard(props) {
         <div className="postcard__preview-txt">{props.description}</div>
         <div className="postcard__preview-txt">{props.choices}</div>
         <ul className="postcard__tagbox">
-          <li className="tag__item">
-            <i className="fa fa-inr"></i> {props.price}
-          </li>
-          <li className="tag__item">
-            <i className="fas fa-clock mr-2"></i> {props.cookingTime} mins
-          </li>
+          {props.price && (
+            <li className="tag__item">
+              <i className="fa fa-inr"></i> {props.price}
+            </li>
+          )}
+          {props.cookingTime && (
+            <li className="tag__item">
+              <i className="fas fa-clock mr-2"></i> {props.cookingTime} mins
+            </li>
+          )}
           <li className="tag__item">
             <img
               className="veg_nonveg"
               src={"images/icons/" + (props.isVeg ? "veg" : "nonveg") + ".png"}
-              alt="triangle with equal sides"
+              alt="ve/non-veg icon"
               srcSet={
                 "images/icons/" + (props.isVeg ? "veg" : "nonveg") + ".svg"
               }
