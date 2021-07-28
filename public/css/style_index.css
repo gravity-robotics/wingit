@@ -260,6 +260,28 @@ a:visited {
   border-radius: 40px 0 40px 0;
 }
 
+.pushed {
+  align-items: center;
+  background-color: rgb(49, 49, 49);
+  box-shadow: 
+    8px 8px 12px 0 rgba(0, 0, 0, 0.15),
+    -6px -6px 10px 0 rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  margin-right: 4rem;
+  width: 200px;
+}
+
+.card1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+}
+
 /* Plans section */
 #plans {
   height: 100vh;
@@ -287,7 +309,7 @@ a:visited {
 .contact-div {
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(49, 49, 49);
   border-radius: 40px 0 40px 0;
 }
 
@@ -297,7 +319,7 @@ a:visited {
   height: 70vh;
   width: 100%;
   padding: 0;
-  background-color: #fff;
+  background-color: rgb(49, 49, 49);
 }
 
 .footer-div {
@@ -344,30 +366,7 @@ a:visited {
     width: 100%;
     background-color: rgb(49, 49, 49);
   }
-  
-  .pushed {
-    align-items: center;
-    background-color: rgb(49, 49, 49);
-    box-shadow: 
-      8px 8px 12px 0 rgba(0, 0, 0, 0.25),
-      -6px -6px 10px 0 rgba(255, 255, 255, 0.25);
-    border-radius: 50px;
-    display: flex;
-    height: 200px;
-    justify-content: center;
-    margin-right: 4rem;
-    width: 200px;
-  }
 
-  /* arrange div in the centre of the parent div */
-  .card1 {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-
-  }
   .about-div,
   .plans-div,
   .contact-div {
@@ -414,7 +413,7 @@ a:visited {
   .about-div {
     height: 100%;
     width: 100%;
-    background-color: #fff;
+    background-color: rgb(49, 49, 49);
   }
 
   .about-div,
