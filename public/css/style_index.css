@@ -262,17 +262,11 @@ a:visited {
 }
 
 .pushed {
-  /* align-items: center; */
   background-color: rgb(49, 49, 49);
   box-shadow: 8px 8px 12px 0 rgba(0, 0, 0, 0.15),
     -6px -6px 10px 0 rgba(255, 255, 255, 0.1);
   border-radius: 50px;
   display: flex;
-  /* height: fit-content;
-  justify-content: center; */
-  /* margin-right: 4rem; */
-  /* padding: 0.5rem; */
-  /* width: 200px; */
 }
 
 .cards {
@@ -289,12 +283,27 @@ a:visited {
   padding-bottom: 4rem;
 }
 
-.card1 {
-
+.card {
   min-height: 25rem;
-  
 }
 
+.card-heading {
+  font-size: 2rem;
+  /* font-weight: bold; */
+  color: #68e0cf;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  padding: 2rem;
+}
 /* Plans section */
 #plans {
   height: 100vh;
