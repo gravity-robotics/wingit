@@ -1,3 +1,9 @@
+// auto collapse navbar
+$('.navbar-nav a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+    $(".navbar-toggler").removeClass('opened');
+  });
+
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -40,6 +46,7 @@ TxtType.prototype.tick = function() {
 };
 
 window.onload = function() {
+    
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
