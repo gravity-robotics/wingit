@@ -370,7 +370,17 @@ a:visited {
   max-width: 80rem;
 }
 
-
+.contact-form {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-auto-rows: auto;
+  grid-gap: 4rem;
+  padding: 2rem 2rem 7rem 2rem;
+  background-color: rgb(49, 49, 49);
+  border-radius: 40px;
+  /* display: flex; */
+}
 .pressed {
   box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
     -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
@@ -400,13 +410,13 @@ a:visited {
   text-align: left;
   padding: 0 2rem 0 2rem;
 }
+
 .contact-form {
-  overflow-x: hidden;
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: auto;
   grid-auto-rows: auto;
   grid-gap: 4rem;
-  padding: 2rem 2rem 7rem 2rem;
+  padding: 1.5rem 2rem 7.5rem 2rem;
   background-color: rgb(49, 49, 49);
   border-radius: 40px;
   /* display: flex; */
@@ -415,7 +425,7 @@ a:visited {
 .email {
   height: 5rem;
   width: 60vw;
-  min-width: 15rem;
+  min-width: 19rem;
   max-width: 50rem;
   text-align: left;
   padding-top: 1.5rem;
@@ -595,6 +605,19 @@ a:visited {
   .contact-div {
     border-radius: 40px 0 40px 0;
   }
+
+  .contact-form {
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-auto-rows: auto;
+    grid-gap: 4rem;
+    padding: 2rem 2rem 7rem 2rem;
+    background-color: rgb(49, 49, 49);
+    border-radius: 40px;
+    /* display: flex; */
+  }
+
   .footer-div {
     border-radius: 40px 0 0 0;
   }
