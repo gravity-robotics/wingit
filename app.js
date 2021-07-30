@@ -55,6 +55,12 @@ app.get("/signup", (req, res) => {
   res.render("signup");
 });
 
+// print post data from /contact onto the console
+app.post("/contact", (req, res) => {
+  console.log(req.body.email);
+  res.redirect("/");
+});
+
 app.use(users);
 app.use(auth);
 
