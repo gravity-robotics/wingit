@@ -286,7 +286,10 @@ a:visited {
     rgba(0, 0, 0, 0.2),
     rgba(255, 255, 255, 0.068)
   );
+  box-shadow: 10px 10px 14px 0 rgba(0, 0, 0, 0.15),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.1);
 }
+
 .about-div .section-title {
   /* font-family: 'Comfortaa', cursive; */
   font-family: "Montserrat", sans-serif;
@@ -365,7 +368,7 @@ a:visited {
   border-radius: 40px 0 40px 0;
 }
 
-.contact-form-div{
+.contact-form-div {
   margin: auto;
   max-width: 80rem;
 }
@@ -381,6 +384,7 @@ a:visited {
   border-radius: 40px;
   /* display: flex; */
 }
+
 .pressed {
   box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
     -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
@@ -419,10 +423,12 @@ a:visited {
   padding: 1.5rem 2rem 7.5rem 2rem;
   background-color: rgb(49, 49, 49);
   border-radius: 40px;
+  color: #fff;
   /* display: flex; */
 }
 
 .email {
+  color: #fff;
   height: 5rem;
   width: 60vw;
   min-width: 19rem;
@@ -433,13 +439,13 @@ a:visited {
   background-color: #373737;
   border: 0;
   font-size: 2rem;
-  /* font-weight: bold; */
+  overflow:scroll;  /* font-weight: bold; */
 }
 
 /* change color of typing text inside email input */
 .email:focus {
   color: #fff;
-  background-color: #373737;
+  outline: none;
 }
 
 .email:placeholder-shown {
