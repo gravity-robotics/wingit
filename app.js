@@ -1,5 +1,5 @@
 const express = require("express");
-const config = require('config');
+const config = require("config");
 const bodyParser = require("body-parser");
 const { check, validationResult } = require("express-validator");
 const Joi = require("joi");
@@ -14,8 +14,8 @@ var uri =
   "mongodb+srv://admin-user:Carpit@680@menus.b3pua.mongodb.net/menuDB?retryWrites=true&w=majority";
 var local_uri = "mongodb://127.0.0.1:27017/menuDB";
 
-if (!config.get('PrivateKey')) {
-  console.error('FATAL ERROR: PrivateKey is not defined.');
+if (!config.get("PrivateKey")) {
+  console.error("FATAL ERROR: PrivateKey is not defined.");
   process.exit(1);
 }
 
@@ -55,7 +55,6 @@ app.get("/signup", (req, res) => {
   res.render("signup");
 });
 
-// print post data from /contact onto the console
 app.post("/contact", (req, res) => {
   console.log(req.body.email);
   res.redirect("/");
