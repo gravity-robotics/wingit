@@ -28,13 +28,16 @@
               <a class="nav-link" aria-current="page" href="#home">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/demo">DEMO</a>
+              <a class="nav-link" href="#about">ABOUT</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#plans">PLANS</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/demo">DEMO</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/login">LOGIN</a>
@@ -50,7 +53,7 @@
           <a href="#home" class="wingit">Wingit</a>
 
           <h1 class="before-typing">Ordering made
-            <a href="#features" class="typewrite" data-period="2000" data-type='[ "fast.", "safe.", "easy."]'>
+            <a href="#about" class="typewrite" data-period="2000" data-type='[ "fast.", "safe.", "easy."]'>
               <span class="wrap"></span>
             </a>
           </h1>
@@ -66,6 +69,31 @@
 
     <section class="container-fluid" id="about">
       <div class="about-div">
+        <h1 class="section-title">"What's Wingit?" you ask.</h1>
+        <div class="cards">
+
+          <div class="pushed card">
+            <h2 class="card-heading">SCAN</h2>
+            <p class="card-text">It lets your clients be seated or come up to your store front to scan a QR code. They
+              are greeted by a webapp, with your menu, completely curated to your store's theme.</p>
+          </div>
+          <div class="pushed card">
+            <h2 class="card-heading">ORDER</h2>
+            <p class="card-text">From there your clients can not only browse and filter the menu, but also order and pay
+              online.</p>
+          </div>
+          <div class="pushed card">
+            <h2 class="card-heading">PAY</h2>
+            <p class="card-text">The order comes right to your Point of Sale and you get a ton of benefits through this
+              simple process.</p>
+          </div>
+          <div class="pushed card">
+            <h2 class="card-heading">ANYWHERE</h2>
+            <p class="card-text">Why should good things be limited? Use Wingit for anything, anywhere. You provide
+              services? You need Wingit!</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -76,6 +104,23 @@
 
     <section class="container-fluid" id="contact">
       <div class="contact-div">
+
+        <div class="contact-form-div">
+          <h1 class="contact-title">Let's Talk About Wingit.</h1>
+          <p class="contact-text">
+            No nonsense, just the content you need.
+          </p>
+          <form action="/contact" method="post" class="contact-form">
+
+            <input type="email" name="email" class="email pressed" placeholder="Your Email" required>
+
+            <button type="submit" class="submit pushed">Submit
+            </button>
+
+          </form>
+
+        </div>
+
       </div>
     </section>
 
@@ -92,7 +137,7 @@
         </div>
       </div>
     </section>
-
-    <script src="src/typing-animation.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="src/index.js"></script>
 
     <%- include("footer") %>

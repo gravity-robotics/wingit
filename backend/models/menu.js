@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 
 const menuSchema = mongoose.Schema({
   name: { type: String, unique: true, required: true },
-  veg_nonveg: { type: Boolean, required: true },
+  veg_nonveg: { type: Boolean, unique: true, required: true },
   price: { type: Number },
   description: { type: String },
   category: { type: String },
