@@ -1,17 +1,19 @@
 import React from "react";
-import Header from "./Header";
-import CategoriesNavbar from "./CategoriesNavbar";
-import Menu from "./Menu";
+import Webapp from "./Webapp";
+import Website from "./Website";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+
 
 function App() {
   return (
-    <div className="gradient">
-      <Header title="Demo" />
-      <CategoriesNavbar />
-      <main className="container py-2">
-        <Menu />
-      </main>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" component={Website} exact />
+        <Route path="/view" component={Webapp} exact />
+      </Switch>
+    </Router>
   );
 }
 
