@@ -109,4 +109,3 @@ dist
 .templates/
 template.config.js
 *log/
-.build/*

@@ -52,17 +52,15 @@ body {
 .navbar .navbar-toggler {
   margin-left: auto;
   margin-right: 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus,
-.navbar-toggler:hover
- {
+.navbar-toggler:hover {
   color: transparent;
   background-color: rgba(255, 255, 255, 0.1) !important;
-
 }
 
 a.nav-link:hover {
@@ -262,28 +260,24 @@ a:visited {
 /* About section */
 #about {
   position: relative;
-  /* min-height: 200vh; */
   width: 100vw;
   padding: 0;
-  background-image: linear-gradient(#20bdff, #f089e5);
+  background-image: linear-gradient(#20bdff, #f089c5);
 }
 
 .about-div {
   text-align: center;
   align-items: center;
-
   width: 100%;
   background-color: rgb(49, 49, 49);
   border-radius: 40px 0 40px 0;
 }
 
-/* transition background-color of pushed class when card is hovered */
 .pushed {
   background-color: rgb(49, 49, 49);
   box-shadow: 8px 8px 12px 0 rgba(0, 0, 0, 0.15),
     -6px -6px 10px 0 rgba(255, 255, 255, 0.1);
   border-radius: 50px;
-  /* display: flex; */
 }
 
 .card:hover.pushed {
@@ -297,9 +291,8 @@ a:visited {
 }
 
 .about-div .section-title {
-  /* font-family: 'Comfortaa', cursive; */
   font-family: "Montserrat", sans-serif;
-  padding-top: 2rem;
+  padding-top: 5rem;
   font-size: 2.5rem;
   color: #fff;
 }
@@ -353,10 +346,31 @@ a:visited {
 }
 
 .plans-div {
+  text-align: center;
+  content-align: center;
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(#f089e5, #ec8b6b);
+  background-image: linear-gradient(#f089c5, #ec8b6b);
   border-radius: 40px 0 40px 0;
+}
+
+.plans-card-div {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 10rem 1.5rem 4rem 1.5rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 3rem;
 }
 
 /* Contact section */
@@ -389,7 +403,6 @@ a:visited {
   padding: 2rem 2rem 7rem 2rem;
   background-color: rgb(49, 49, 49);
   border-radius: 40px;
-  /* display: flex; */
 }
 
 .pressed {
