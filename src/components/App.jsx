@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" component={Website} exact />
-        <Route path="/view" component={Webapp} exact />
+        <Route path="/demo" component={Webapp} exact />
       </Switch>
     </Router>
   );
