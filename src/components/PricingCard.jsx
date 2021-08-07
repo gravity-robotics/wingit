@@ -14,10 +14,10 @@ function PricingCard(props) {
         <p className="month">/month</p>
       </div>
       <div className="pricingFeatureseDiv" style={bg} >
-        <p className="pricingCardFeatures">{props.features}</p>
-        <p className="pricingCardFeatures">{props.features}</p>
-        <p className="pricingCardFeatures">{props.features}</p>
-        <p className="pricingCardFeatures">{props.features}</p>
+        <p className="pricingCardFeatures">{props.feature1}</p>
+        <p className="pricingCardFeatures">{props.feature2}</p>
+        <p className="pricingCardFeatures">{props.feature3}</p>
+        <p className="pricingCardFeatures">{props.feature4}</p>
       </div>
     </div>
   );
