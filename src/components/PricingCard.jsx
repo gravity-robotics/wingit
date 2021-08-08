@@ -18,6 +18,8 @@ function PricingCard(props) {
         <p className="pricingCardFeatures">{props.feature2}</p>
         <p className="pricingCardFeatures">{props.feature3}</p>
         <p className="pricingCardFeatures">{props.feature4}</p>
+        <p className="pricingCardFeatures">{props.feature5}</p>
+        <p className="pricingCardFeatures">{props.feature6}</p>
       </div>
     </div>
   );

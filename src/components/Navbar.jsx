@@ -18,8 +18,6 @@ function Navbar() {
           $(".navbar-toggler").addClass("opened");
         } else {
           $(".navbar-toggler").removeClass("opened");
-          // $(".navbar-collapse").removeClass("show") ;
-          // $(".navbar-collapse").addClass("hide") ;
         }
       }
     }
@@ -31,8 +29,6 @@ function Navbar() {
       $(".navbar-toggler").addClass("opened");
     } else {
       $(".navbar-toggler").removeClass("opened");
-      // $(".navbar-collapse").removeClass("show") ;
-      // $(".navbar-collapse").addClass("hide") ;
     }
   });
 
@@ -47,8 +43,6 @@ function Navbar() {
               $(".navbar-toggler").addClass("opened");
             } else {
               $(".navbar-toggler").removeClass("opened");
-              // $(".navbar-collapse").removeClass("show") ;
-              // $(".navbar-collapse").addClass("hide") ;
             }
           }}
           type="button"
@@ -94,6 +88,11 @@ function Navbar() {
               <li className="nav-item">
                 <a className="nav-link" href="/demo">
                   DEMO
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/careers">
+                  CAREERS
                 </a>
               </li>
               <li className="nav-item">

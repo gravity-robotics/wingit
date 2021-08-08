@@ -10,7 +10,7 @@
   text-align: center;
   align-items: center;
   background-color: #373737;
-  min-height: fit-content;
+  height: fit-content;
   /* min-width: 300px; */
   max-width: 400px;
   border-radius: 30px;
@@ -58,12 +58,12 @@
   width: 100%;
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+  
 }
 
 @media screen and (min-width: 500px) {
   .pricingFeatureseDiv{
-    font-size: 1.1rem;
-    font-weight: 550;
+    font-size: 1.2rem;
   }
   .plans-heading {
     padding-top: 7rem;
